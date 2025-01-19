@@ -5,6 +5,7 @@ import { Container, Content } from "@/components/Templates";
 import { Button, Gap, Text, TextInput } from "@/components";
 import Images from "@/assets/images";
 import { Colors, HEIGHT, Size, WIDTH } from "@/assets/styles";
+import { Link } from "expo-router";
 
 export default function LoginPage() {
   return (
@@ -57,6 +58,12 @@ export default function LoginPage() {
               elevation: 1,
             }}
           />
+          <View style={{ flexDirection: 'row', alignSelf: 'center', marginTop: -8 }}>
+            <Text>Don't have account? </Text>
+            <Link push href="/register">
+              <Text color={Colors.Blue.Base} semiBold>Sign Up Now</Text>
+            </Link>
+          </View>
         </Content>
       </ScrollView>
     </Container>
