@@ -1,9 +1,10 @@
-import { View, Text } from "react-native";
+import { Container } from "@/components/Templates";
+import { Text } from "@/components";
 
 export default function RegisterPage() {
   return (
-    <View>
+    <Container>
       <Text>Ini Register Page</Text>
-    </View>
+    </Container>
   )
 }

@@ -28,8 +28,8 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <View style={{ height: Dimensions.get("screen").height, width: Dimensions.get("screen").height }}>
-        <StatusBar backgroundColor="transparent" translucent />
+      <View style={{ height: Dimensions.get("screen").height, width: Dimensions.get("screen").width }}>
+        <StatusBar style="dark" backgroundColor="transparent" />
         <Stack screenOptions={{
           headerShown: false,
         }} />
